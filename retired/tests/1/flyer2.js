@@ -1,1 +1,0 @@
-importScripts("flyer-beta.js")
