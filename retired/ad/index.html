@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flyer AD</title>
+    flyer-logo.svg
+    <script src="/src/flyer/jquery.js"></script>
+    <script>
+    flyer = {
+            flyer_css: "yes", // Yes or url to css
+            flyer_show: 'img', //img/vid/frm
+            flyer_aid: '', // Unused
+            flyer_title: 'A Word From Our Sponsor: Flyer.JS', // title
+            flyer_title_link: 'http://git.nrrinc.net/flyer', //title link
+            flyer_frame_src: '', // src to iframe, if iframe is set
+            flyer_frame_rp: 'unsafe-url', // if url is on another server, change
+            flyer_desc:'Flyer JS is a new javascript script that Allows Custom ads, and User controls for Acceptable Ads.', // Bottom text SOMEONE WRITE THIS BETTER PLZ THX
+            flyer_video:'/link/to/mp4.mp4', // video link (NOT YOUTUBE.), if video is set
+            flyer_img_title: 'Flyerjs', // title of image, if image is set
+            flyer_img_src: "flyer-logo.svg", // image src, if image is set
+            flyer_note: "Hey! Welcome to Flyer! http://git.nrrinc.net/flyer", // unused, but to be used
+    }
+    </script>
+    <script src="/src/flyer/flyer.js"></script>
+</head>
+<body style="background-color: black;">
+    <div id="flyer"></div>
+</body>
+</html>
