@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="json.js"></script>
+    <script>
+        localStorage.setItem('Flyer', JSON.stringify(flyerconf));
+    </script>
+</head>
+<body>
+    <button onclick="localStorage.clear();console.log('conf cleared')">Clear</button>
+    <button onclick="localStorage.setItem('Flyer', JSON.stringify(flyerconf));console.log('Flyer conf loaded');">Load</button>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Document</title>
+    <script src="/jquery.js"></script>
+    <style>
+/* the Flyer Project, NRRINC Media (C) 2020, Apache V2*/
+#flyer {
+    display: inline;
+    background-color: white;
+    clear: both;
+    padding-bottom: 10px
+}
+#flyer.hide {
+    display: none;
+
+}
+#flyer .flyer-title {
+    padding-top: 10px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: #2483A6;
+    margin: 0;
+}
+#flyer .flyer-title a {
+    color: #262626;
+    border: none;
+    text-decoration: none;
+}
+#flyer-image {
+    display: inline;
+    max-height: 375px;
+    width: 100%;
+}
+.flyer-title {
+    border-radius: 25px 25px 0px 0px;
+    background: white;
+    padding: 15px;
+    font-size: 20px;
+}
+.flyer-desc {
+    border-radius: 0px 0px 25px 25px;
+    background: white;
+    padding: 15px;
+    font-size: 15px;
+    margin: 0px;
+}
+.flyer-iframe {
+    border: 0px;
+    display: inline;
+    width: 100%;
+}
+@media screen and (max-width:989px) { 
+   /*reserved*/
+   body {
+       background: blue !important;
+   }
+}
+    </style>
+    <style>
+        body {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flyer">
+    <h2 class="flyer-title"><a href="#" id="flyer-link">Brought to you by:<i id="flyer-Sponsor-name"></i></a></h2>
+    <div class="entry">
+            <img class="flyer-image" id="flyer-image" src="https://i.ytimg.com/vi/PX-0Nrg4Yhw/maxresdefault.jpg" alt="" title="this is not the right image.." style="display: show;"/>
+        <!--    <iframe id="flyer-frame" class="flyer-iframe"></iframe>-->
+            <div class="myVideo" id="flyer_video-m" data-video="/src/flyer/video/sample.mp4" data-poster="/src/flyer/video/sample.jpg" data-type="video/mp4"></div>
+            <p class="flyer-desc" id="flyer-desc">DESC</p>
+    </div>
+    </div>
+</body>
+
+</html>
